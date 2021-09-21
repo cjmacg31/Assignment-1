@@ -21,8 +21,10 @@ void main() {
 	{
 	case 1:
 		add();
+		return 0;
 	case 2:
 		subtract();
+		return 0;
 	}
 
 }
@@ -47,6 +49,7 @@ void add() {
 	scanf_s("%lf", &num2);
 	result = num1 + num2;
 	printf("%lf + %lf = %lf\n", num1, num2, result);
+
 }
 
 void subtract() {
@@ -61,4 +64,5 @@ void subtract() {
 	result = num1 - num2;
 
 	printf("%.2f - %.2f = %.2f\n", num1, num2, result);
+
 }
