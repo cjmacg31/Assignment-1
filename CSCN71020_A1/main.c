@@ -21,7 +21,7 @@ void main() {
 	{
 	case 1:
 		add();
-		return 0;
+		return 0;    //returns 0 after case is ran
 	case 2:
 		subtract();
 		return 0;
@@ -44,11 +44,11 @@ void printOptions() {
 void add() {
 	double num1, num2, result;
 	printf("Enter the first value:");
-	scanf_s("%lf", &num1);
+	scanf_s("%lf", &num1);  //input num1
 	printf("Enter the second value:");
-	scanf_s("%lf", &num2);
-	result = num1 + num2;
-	printf("%lf + %lf = %lf\n", num1, num2, result);
+	scanf_s("%lf", &num2);  //input num2
+	result = num1 + num2;  //calculations for num1 + num2
+	printf("%lf + %lf = %lf\n", num1, num2, result);  //final product statement
 
 }
 
@@ -57,12 +57,12 @@ void subtract() {
 	float num1, num2, result;
 
 	printf("Enter the first value: ");
-	scanf_s("%1f", &num1);
+	scanf_s("%1f", &num1);    //input for num1
 	printf("Enter the second value: ");
-	scanf_s("%1f", &num2);
+	scanf_s("%1f", &num2);   //input for num2
 
-	result = num1 - num2;
+	result = num1 - num2;   //subtract calulation
 
-	printf("%.2f - %.2f = %.2f\n", num1, num2, result);
+	printf("%.2f - %.2f = %.2f\n", num1, num2, result);  //final product statement
 
 }
