@@ -50,10 +50,15 @@ void add() {
 }
 
 void subtract() {
-	int num1, num2;
 
-	num1 = 0;
-	num2 = 42;
+	float num1, num2, result;
 
-	int result = num2 / num1;
+	printf("Enter the first value: ");
+	scanf_s("%1f", &num1);
+	printf("Enter the second value: ");
+	scanf_s("%1f", &num2);
+
+	result = num1 - num2;
+
+	printf("%.2f - %.2f = %.2f\n", num1, num2, result);
 }
